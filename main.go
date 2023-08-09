@@ -1,9 +1,9 @@
 package main
 
 import (
+	"bytes"
 	"encoding/json"
 	"fmt"
-	"io"
 	"log"
 	"net/http"
 	"os"
@@ -13,22 +13,6 @@ import (
 	"github.com/sap/gorfc/gorfc"
 	"github.com/secsy/goftp"
 )
-
-// // album represents data about a record album.
-// type album struct {
-// 	ID     string  `json:"id"`
-// 	Title  string  `json:"title"`
-// 	Artist string  `json:"artist"`
-// 	Price  float64 `json:"price"`
-// 	//Array string  `json:"array"`
-// }
-
-// // albums slice to seed record album data.
-// var albums = []album{
-// 	{ID: "1", Title: "Blue Train", Artist: "John Coltrane", Price: 56.99},
-// 	{ID: "2", Title: "Jeru", Artist: "Gerry Mulligan", Price: 17.99},
-// 	{ID: "3", Title: "Sarah Vaughan and Clifford Brown", Artist: "Sarah Vaughan", Price: 39.99},
-// }
 
 type req struct {
 	InterfaceID string `json:"interface_id"`
@@ -76,13 +60,26 @@ type Meta struct {
 func main() {
 
 	router := gin.Default()
-	//	router.GET("/albums", getAlbums)
 
 	router.POST("/api/store", storeFile)
+	router.GET("/api/query", query)
 
 	router.POST("/api/sync_data", sync)
 
 	router.Run(":50016")
+}
+func query(c *gin.Context) {
+
+	decoder := json.NewDecoder(c.Request.Body)
+	var reqBody map[string]interface{}
+
+	err := decoder.Decode(&reqBody)
+	if err != nil {
+		panic(err)
+
+	}
+
+	c.JSON(http.StatusOK, reqBody)
 }
 
 func storeFile(c *gin.Context) {
@@ -100,36 +97,12 @@ func storeFile(c *gin.Context) {
 		panic(err)
 
 	}
-	body, err := json.Marshal(reqBody)
-	if err != nil {
-		fmt.Println(err)
-		return
-	}
-
-	//str := string(b)
-
-	var filename string
-
-	currentTime := time.Now()
-	formattedTime := currentTime.Format("20060102_150405")
-	filename = formattedTime + ".json"
-
-	if err := os.WriteFile(filename, []byte(body), 0666); err != nil {
-		log.Fatal(err)
-	}
 	//c.String(http.StatusOK, str)
 
-	callFTP(filename)
+	callFTP(reqBody)
 }
 
-func AddPost(w http.ResponseWriter, r *http.Request) {
-	len := r.ContentLength          // 获取请求实体长度
-	body := make([]byte, len)       // 创建存放请求实体的字节切片
-	r.Body.Read(body)               // 调用 Read 方法读取请求实体并将返回内容存放到上面创建的字节切片
-	io.WriteString(w, string(body)) // 将请求实体作为响应实体返回
-}
-
-func callFTP(filename string) {
+func callFTP(reqBody map[string]interface{}) {
 
 	config := goftp.Config{
 		User:               "F01",
@@ -146,37 +119,28 @@ func callFTP(filename string) {
 
 	defer client.Close()
 
-	//	file := "file.txt"
+	body, err := json.Marshal(reqBody)
+	if err != nil {
+		fmt.Println(err)
+		return
+	}
 
-	// Upload a file from disk
-	bigFile, err := os.Open(filename)
+	// 将json格式转换成io.reader 类型，直接发送到FTP
+	// 参考：https://gosamples.dev/struct-to-io-reader/
+	reader := bytes.NewReader(body)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	currentTime := time.Now()
+	formattedTime := currentTime.Format("20060102_150405")
+	filename := formattedTime + ".json"
+
+	err = client.Store(filename, reader)
 	if err != nil {
 		panic(err)
 	}
 
-	err = client.Store(filename, bigFile)
-	if err != nil {
-		panic(err)
-	}
-
-	err = os.Remove(filename)
-	if err != nil {
-
-		//如果删除失败则输出 file remove Error!
-
-		fmt.Println("file remove Error!")
-
-		//输出错误详细信息
-
-		fmt.Printf("%s", err)
-
-	} else {
-
-		//如果删除成功则输出 file remove OK!
-
-		fmt.Println("file remove OK!")
-
-	}
 }
 
 func sync(c *gin.Context) {
@@ -215,15 +179,14 @@ func CallRfc(reqParam req) {
 			"SPRAS":  reqParam.Spras,
 			"AS_URL": reqParam.AsURL,
 			"DEBUG":  reqParam.Debug,
-			//"ATTA_MODE": reqParam.AttaMode,
 		},
 		"CONDITION": table,
 	}
 
 	funcname := "ZAS_CAPP_NOTICE"
 
-	attrs, _ := c.GetConnectionAttributes()
-	fmt.Println("Connection attributes", attrs)
+	//attrs, _ := c.GetConnectionAttributes()
+	//fmt.Println("Connection attributes", attrs)
 
 	//params := map[string]interface{}{}
 	r, e := c.Call(funcname, params)
