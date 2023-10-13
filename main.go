@@ -134,9 +134,12 @@ func callFTP(reqBody map[string]interface{}) {
 
 	currentTime := time.Now()
 	formattedTime := currentTime.Format("20060102_150405")
-	filename := formattedTime + ".json"
 
-	err = client.Store(filename, reader)
+	//文件路径 + 文件名
+	file := "file/" + formattedTime + ".json"
+
+	//func (c *Client) Store(path string, src io.Reader) error
+	err = client.Store(file, reader)
 	if err != nil {
 		panic(err)
 	}

@@ -3,7 +3,6 @@ FROM golang:1.20-alpine
 
 #为镜像设置必要的环境变量
 ENV GO111MODULE=on \
-    GOPROXY=https://goproxy.cn,direct \
     CGO_ENABLED=0 \
     GOOS=linux \
     GOARCH=amd64
@@ -12,10 +11,15 @@ ENV GO111MODULE=on \
 WORKDIR /root/go/go-api-ftp
 
 # Copies everything from your root directory into /app
-COPY . /root/go/go-api-ftp
+#COPY . /root/go/go-api-ftp
+COPY go.mod go.sum ./
 
 # Installs Go dependencies
 RUN go mod download
+
+# Copy the source code. Note the slash at the end, as explained in
+# https://docs.docker.com/engine/reference/builder/#copy
+COPY *.go ./
 
 # Builds your app with optional configuration
 RUN go build -o /go-api-ftp
