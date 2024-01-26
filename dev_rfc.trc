@@ -468,3 +468,574 @@ uuidd according to SAP note 1391070.
 ERROR UUID daemon (uuidd) not found.
 Please ask your system administrator to install 
 uuidd according to SAP note 1391070.
+
+**** Trace file opened at 2023-12-12, 18:13:02 CST
+ RFC library: 720, Current working directory: /root/gomodule/go-api-ftp, Program: main
+ Hardware: AMD/Intel x86_64 with Linux x86_64, Operating_system: Linux 3.10.0-1160.92.1.el7.x86_64, Kernel_release: 720 patchlevel 14
+ Hostname: localhost, IP address: 127.0.0.1, IP address_v6: 127.0.0.1
+
+ERROR UUID daemon (uuidd) not found.
+Please ask your system administrator to install 
+uuidd according to SAP note 1391070.
+Function module "ZAS_CAPP_PM_ORD" not found.
+CREATE DATA: The specified type (ZAST_H_PMORD) is not a valid data type.
+CREATE DATA: The specified type (ZAST_H_PMORD) is not a valid data type.
+Invalid value in OPTION field of value table for IN itab operator. operator.
+
+**** Trace file opened at 2024-01-25, 09:10:01 CST
+ RFC library: 720, Current working directory: /root/gomodule/go-api-ftp, Program: main
+ Hardware: AMD/Intel x86_64 with Linux x86_64, Operating_system: Linux 3.10.0-1160.92.1.el7.x86_64, Kernel_release: 720 patchlevel 14
+ Hostname: localhost, IP address: 127.0.0.1, IP address_v6: 127.0.0.1
+
+ERROR UUID daemon (uuidd) not found.
+Please ask your system administrator to install 
+uuidd according to SAP note 1391070.
+
+**** Trace file opened at 2024-01-25, 09:27:30 CST
+ RFC library: 720, Current working directory: /root/gomodule/go-api-ftp, Program: main
+ Hardware: AMD/Intel x86_64 with Linux x86_64, Operating_system: Linux 3.10.0-1160.92.1.el7.x86_64, Kernel_release: 720 patchlevel 14
+ Hostname: localhost, IP address: 127.0.0.1, IP address_v6: 127.0.0.1
+
+ERROR UUID daemon (uuidd) not found.
+Please ask your system administrator to install 
+uuidd according to SAP note 1391070.
+
+**** Trace file opened at 2024-01-25, 09:29:47 CST
+ RFC library: 720, Current working directory: /root/gomodule/go-api-ftp, Program: main
+ Hardware: AMD/Intel x86_64 with Linux x86_64, Operating_system: Linux 3.10.0-1160.92.1.el7.x86_64, Kernel_release: 720 patchlevel 14
+ Hostname: localhost, IP address: 127.0.0.1, IP address_v6: 127.0.0.1
+
+ERROR UUID daemon (uuidd) not found.
+Please ask your system administrator to install 
+uuidd according to SAP note 1391070.
+
+**** Trace file opened at 2024-01-25, 09:32:45 CST
+ RFC library: 720, Current working directory: /root/gomodule/go-api-ftp, Program: main
+ Hardware: AMD/Intel x86_64 with Linux x86_64, Operating_system: Linux 3.10.0-1160.92.1.el7.x86_64, Kernel_release: 720 patchlevel 14
+ Hostname: localhost, IP address: 127.0.0.1, IP address_v6: 127.0.0.1
+
+ERROR UUID daemon (uuidd) not found.
+Please ask your system administrator to install 
+uuidd according to SAP note 1391070.
+
+**** Trace file opened at 2024-01-25, 09:41:58 CST
+ RFC library: 720, Current working directory: /root/gomodule/go-api-ftp, Program: main
+ Hardware: AMD/Intel x86_64 with Linux x86_64, Operating_system: Linux 3.10.0-1160.92.1.el7.x86_64, Kernel_release: 720 patchlevel 14
+ Hostname: localhost, IP address: 127.0.0.1, IP address_v6: 127.0.0.1
+
+ERROR UUID daemon (uuidd) not found.
+Please ask your system administrator to install 
+uuidd according to SAP note 1391070.
+
+**** Trace file opened at 2024-01-25, 09:44:19 CST
+ RFC library: 720, Current working directory: /root/gomodule/go-api-ftp, Program: main
+ Hardware: AMD/Intel x86_64 with Linux x86_64, Operating_system: Linux 3.10.0-1160.92.1.el7.x86_64, Kernel_release: 720 patchlevel 14
+ Hostname: localhost, IP address: 127.0.0.1, IP address_v6: 127.0.0.1
+
+ERROR UUID daemon (uuidd) not found.
+Please ask your system administrator to install 
+uuidd according to SAP note 1391070.
+
+**** Trace file opened at 2024-01-25, 09:45:30 CST
+ RFC library: 720, Current working directory: /root/gomodule/go-api-ftp, Program: main
+ Hardware: AMD/Intel x86_64 with Linux x86_64, Operating_system: Linux 3.10.0-1160.92.1.el7.x86_64, Kernel_release: 720 patchlevel 14
+ Hostname: localhost, IP address: 127.0.0.1, IP address_v6: 127.0.0.1
+
+ERROR UUID daemon (uuidd) not found.
+Please ask your system administrator to install 
+uuidd according to SAP note 1391070.
+
+**** Trace file opened at 2024-01-25, 09:51:43 CST
+ RFC library: 720, Current working directory: /root/gomodule/go-api-ftp, Program: main
+ Hardware: AMD/Intel x86_64 with Linux x86_64, Operating_system: Linux 3.10.0-1160.92.1.el7.x86_64, Kernel_release: 720 patchlevel 14
+ Hostname: localhost, IP address: 127.0.0.1, IP address_v6: 127.0.0.1
+
+ERROR UUID daemon (uuidd) not found.
+Please ask your system administrator to install 
+uuidd according to SAP note 1391070.
+
+**** Trace file opened at 2024-01-25, 09:51:53 CST
+ RFC library: 720, Current working directory: /root/gomodule/go-api-ftp, Program: main
+ Hardware: AMD/Intel x86_64 with Linux x86_64, Operating_system: Linux 3.10.0-1160.92.1.el7.x86_64, Kernel_release: 720 patchlevel 14
+ Hostname: localhost, IP address: 127.0.0.1, IP address_v6: 127.0.0.1
+
+ERROR UUID daemon (uuidd) not found.
+Please ask your system administrator to install 
+uuidd according to SAP note 1391070.
+
+**** Trace file opened at 2024-01-25, 09:53:26 CST
+ RFC library: 720, Current working directory: /root/gomodule/go-api-ftp, Program: main
+ Hardware: AMD/Intel x86_64 with Linux x86_64, Operating_system: Linux 3.10.0-1160.92.1.el7.x86_64, Kernel_release: 720 patchlevel 14
+ Hostname: localhost, IP address: 127.0.0.1, IP address_v6: 127.0.0.1
+
+ERROR UUID daemon (uuidd) not found.
+Please ask your system administrator to install 
+uuidd according to SAP note 1391070.
+
+**** Trace file opened at 2024-01-25, 10:07:50 CST
+ RFC library: 720, Current working directory: /root/gomodule/go-api-ftp, Program: main
+ Hardware: AMD/Intel x86_64 with Linux x86_64, Operating_system: Linux 3.10.0-1160.92.1.el7.x86_64, Kernel_release: 720 patchlevel 14
+ Hostname: localhost, IP address: 127.0.0.1, IP address_v6: 127.0.0.1
+
+ERROR UUID daemon (uuidd) not found.
+Please ask your system administrator to install 
+uuidd according to SAP note 1391070.
+
+**** Trace file opened at 2024-01-25, 10:09:17 CST
+ RFC library: 720, Current working directory: /root/gomodule/go-api-ftp, Program: main
+ Hardware: AMD/Intel x86_64 with Linux x86_64, Operating_system: Linux 3.10.0-1160.92.1.el7.x86_64, Kernel_release: 720 patchlevel 14
+ Hostname: localhost, IP address: 127.0.0.1, IP address_v6: 127.0.0.1
+
+ERROR UUID daemon (uuidd) not found.
+Please ask your system administrator to install 
+uuidd according to SAP note 1391070.
+
+**** Trace file opened at 2024-01-25, 10:48:39 CST
+ RFC library: 720, Current working directory: /root/gomodule/go-api-ftp, Program: main
+ Hardware: AMD/Intel x86_64 with Linux x86_64, Operating_system: Linux 3.10.0-1160.92.1.el7.x86_64, Kernel_release: 720 patchlevel 14
+ Hostname: localhost, IP address: 127.0.0.1, IP address_v6: 127.0.0.1
+
+ERROR UUID daemon (uuidd) not found.
+Please ask your system administrator to install 
+uuidd according to SAP note 1391070.
+
+**** Trace file opened at 2024-01-25, 11:25:49 CST
+ RFC library: 720, Current working directory: /root/gomodule/go-api-ftp, Program: main
+ Hardware: AMD/Intel x86_64 with Linux x86_64, Operating_system: Linux 3.10.0-1160.92.1.el7.x86_64, Kernel_release: 720 patchlevel 14
+ Hostname: localhost, IP address: 127.0.0.1, IP address_v6: 127.0.0.1
+
+ERROR UUID daemon (uuidd) not found.
+Please ask your system administrator to install 
+uuidd according to SAP note 1391070.
+
+**** Trace file opened at 2024-01-25, 14:03:56 CST
+ RFC library: 720, Current working directory: /root/gomodule/go-api-ftp, Program: main
+ Hardware: AMD/Intel x86_64 with Linux x86_64, Operating_system: Linux 3.10.0-1160.92.1.el7.x86_64, Kernel_release: 720 patchlevel 14
+ Hostname: localhost, IP address: 127.0.0.1, IP address_v6: 127.0.0.1
+
+ERROR UUID daemon (uuidd) not found.
+Please ask your system administrator to install 
+uuidd according to SAP note 1391070.
+
+**** Trace file opened at 2024-01-25, 14:05:39 CST
+ RFC library: 720, Current working directory: /root/gomodule/go-api-ftp, Program: main
+ Hardware: AMD/Intel x86_64 with Linux x86_64, Operating_system: Linux 3.10.0-1160.92.1.el7.x86_64, Kernel_release: 720 patchlevel 14
+ Hostname: localhost, IP address: 127.0.0.1, IP address_v6: 127.0.0.1
+
+ERROR UUID daemon (uuidd) not found.
+Please ask your system administrator to install 
+uuidd according to SAP note 1391070.
+
+**** Trace file opened at 2024-01-25, 14:07:16 CST
+ RFC library: 720, Current working directory: /root/gomodule/go-api-ftp, Program: main
+ Hardware: AMD/Intel x86_64 with Linux x86_64, Operating_system: Linux 3.10.0-1160.92.1.el7.x86_64, Kernel_release: 720 patchlevel 14
+ Hostname: localhost, IP address: 127.0.0.1, IP address_v6: 127.0.0.1
+
+ERROR UUID daemon (uuidd) not found.
+Please ask your system administrator to install 
+uuidd according to SAP note 1391070.
+
+**** Trace file opened at 2024-01-25, 14:08:14 CST
+ RFC library: 720, Current working directory: /root/gomodule/go-api-ftp, Program: main
+ Hardware: AMD/Intel x86_64 with Linux x86_64, Operating_system: Linux 3.10.0-1160.92.1.el7.x86_64, Kernel_release: 720 patchlevel 14
+ Hostname: localhost, IP address: 127.0.0.1, IP address_v6: 127.0.0.1
+
+ERROR UUID daemon (uuidd) not found.
+Please ask your system administrator to install 
+uuidd according to SAP note 1391070.
+
+**** Trace file opened at 2024-01-25, 14:09:22 CST
+ RFC library: 720, Current working directory: /root/gomodule/go-api-ftp, Program: main
+ Hardware: AMD/Intel x86_64 with Linux x86_64, Operating_system: Linux 3.10.0-1160.92.1.el7.x86_64, Kernel_release: 720 patchlevel 14
+ Hostname: localhost, IP address: 127.0.0.1, IP address_v6: 127.0.0.1
+
+ERROR UUID daemon (uuidd) not found.
+Please ask your system administrator to install 
+uuidd according to SAP note 1391070.
+
+**** Trace file opened at 2024-01-25, 14:14:59 CST
+ RFC library: 720, Current working directory: /root/gomodule/go-api-ftp, Program: main
+ Hardware: AMD/Intel x86_64 with Linux x86_64, Operating_system: Linux 3.10.0-1160.92.1.el7.x86_64, Kernel_release: 720 patchlevel 14
+ Hostname: localhost, IP address: 127.0.0.1, IP address_v6: 127.0.0.1
+
+ERROR UUID daemon (uuidd) not found.
+Please ask your system administrator to install 
+uuidd according to SAP note 1391070.
+
+**** Trace file opened at 2024-01-25, 14:16:18 CST
+ RFC library: 720, Current working directory: /root/gomodule/go-api-ftp, Program: main
+ Hardware: AMD/Intel x86_64 with Linux x86_64, Operating_system: Linux 3.10.0-1160.92.1.el7.x86_64, Kernel_release: 720 patchlevel 14
+ Hostname: localhost, IP address: 127.0.0.1, IP address_v6: 127.0.0.1
+
+ERROR UUID daemon (uuidd) not found.
+Please ask your system administrator to install 
+uuidd according to SAP note 1391070.
+
+**** Trace file opened at 2024-01-25, 14:17:34 CST
+ RFC library: 720, Current working directory: /root/gomodule/go-api-ftp, Program: main
+ Hardware: AMD/Intel x86_64 with Linux x86_64, Operating_system: Linux 3.10.0-1160.92.1.el7.x86_64, Kernel_release: 720 patchlevel 14
+ Hostname: localhost, IP address: 127.0.0.1, IP address_v6: 127.0.0.1
+
+ERROR UUID daemon (uuidd) not found.
+Please ask your system administrator to install 
+uuidd according to SAP note 1391070.
+
+**** Trace file opened at 2024-01-25, 14:18:35 CST
+ RFC library: 720, Current working directory: /root/gomodule/go-api-ftp, Program: main
+ Hardware: AMD/Intel x86_64 with Linux x86_64, Operating_system: Linux 3.10.0-1160.92.1.el7.x86_64, Kernel_release: 720 patchlevel 14
+ Hostname: localhost, IP address: 127.0.0.1, IP address_v6: 127.0.0.1
+
+ERROR UUID daemon (uuidd) not found.
+Please ask your system administrator to install 
+uuidd according to SAP note 1391070.
+
+**** Trace file opened at 2024-01-25, 14:19:20 CST
+ RFC library: 720, Current working directory: /root/gomodule/go-api-ftp, Program: __debug_bin3154
+ Hardware: AMD/Intel x86_64 with Linux x86_64, Operating_system: Linux 3.10.0-1160.92.1.el7.x86_64, Kernel_release: 720 patchlevel 14
+ Hostname: localhost, IP address: 127.0.0.1, IP address_v6: 127.0.0.1
+
+ERROR UUID daemon (uuidd) not found.
+Please ask your system administrator to install 
+uuidd according to SAP note 1391070.
+
+**** Trace file opened at 2024-01-25, 14:19:34 CST
+ RFC library: 720, Current working directory: /root/gomodule/go-api-ftp, Program: __debug_bin3427
+ Hardware: AMD/Intel x86_64 with Linux x86_64, Operating_system: Linux 3.10.0-1160.92.1.el7.x86_64, Kernel_release: 720 patchlevel 14
+ Hostname: localhost, IP address: 127.0.0.1, IP address_v6: 127.0.0.1
+
+ERROR UUID daemon (uuidd) not found.
+Please ask your system administrator to install 
+uuidd according to SAP note 1391070.
+
+**** Trace file opened at 2024-01-25, 14:31:45 CST
+ RFC library: 720, Current working directory: /root/gomodule/go-api-ftp, Program: __debug_bin3169
+ Hardware: AMD/Intel x86_64 with Linux x86_64, Operating_system: Linux 3.10.0-1160.92.1.el7.x86_64, Kernel_release: 720 patchlevel 14
+ Hostname: localhost, IP address: 127.0.0.1, IP address_v6: 127.0.0.1
+
+ERROR UUID daemon (uuidd) not found.
+Please ask your system administrator to install 
+uuidd according to SAP note 1391070.
+
+**** Trace file opened at 2024-01-25, 14:32:54 CST
+ RFC library: 720, Current working directory: /root/gomodule/go-api-ftp, Program: __debug_bin2318
+ Hardware: AMD/Intel x86_64 with Linux x86_64, Operating_system: Linux 3.10.0-1160.92.1.el7.x86_64, Kernel_release: 720 patchlevel 14
+ Hostname: localhost, IP address: 127.0.0.1, IP address_v6: 127.0.0.1
+
+ERROR UUID daemon (uuidd) not found.
+Please ask your system administrator to install 
+uuidd according to SAP note 1391070.
+
+**** Trace file opened at 2024-01-25, 14:37:20 CST
+ RFC library: 720, Current working directory: /root/gomodule/go-api-ftp, Program: __debug_bin9824
+ Hardware: AMD/Intel x86_64 with Linux x86_64, Operating_system: Linux 3.10.0-1160.92.1.el7.x86_64, Kernel_release: 720 patchlevel 14
+ Hostname: localhost, IP address: 127.0.0.1, IP address_v6: 127.0.0.1
+
+ERROR UUID daemon (uuidd) not found.
+Please ask your system administrator to install 
+uuidd according to SAP note 1391070.
+
+**** Trace file opened at 2024-01-25, 14:39:38 CST
+ RFC library: 720, Current working directory: /root/gomodule/go-api-ftp, Program: __debug_bin2125
+ Hardware: AMD/Intel x86_64 with Linux x86_64, Operating_system: Linux 3.10.0-1160.92.1.el7.x86_64, Kernel_release: 720 patchlevel 14
+ Hostname: localhost, IP address: 127.0.0.1, IP address_v6: 127.0.0.1
+
+ERROR UUID daemon (uuidd) not found.
+Please ask your system administrator to install 
+uuidd according to SAP note 1391070.
+
+**** Trace file opened at 2024-01-25, 14:41:55 CST
+ RFC library: 720, Current working directory: /root/gomodule/go-api-ftp, Program: __debug_bin5590
+ Hardware: AMD/Intel x86_64 with Linux x86_64, Operating_system: Linux 3.10.0-1160.92.1.el7.x86_64, Kernel_release: 720 patchlevel 14
+ Hostname: localhost, IP address: 127.0.0.1, IP address_v6: 127.0.0.1
+
+ERROR UUID daemon (uuidd) not found.
+Please ask your system administrator to install 
+uuidd according to SAP note 1391070.
+
+**** Trace file opened at 2024-01-25, 14:43:44 CST
+ RFC library: 720, Current working directory: /root/gomodule/go-api-ftp, Program: __debug_bin4270
+ Hardware: AMD/Intel x86_64 with Linux x86_64, Operating_system: Linux 3.10.0-1160.92.1.el7.x86_64, Kernel_release: 720 patchlevel 14
+ Hostname: localhost, IP address: 127.0.0.1, IP address_v6: 127.0.0.1
+
+ERROR UUID daemon (uuidd) not found.
+Please ask your system administrator to install 
+uuidd according to SAP note 1391070.
+
+**** Trace file opened at 2024-01-25, 14:52:30 CST
+ RFC library: 720, Current working directory: /root/gomodule/go-api-ftp, Program: __debug_bin2144
+ Hardware: AMD/Intel x86_64 with Linux x86_64, Operating_system: Linux 3.10.0-1160.92.1.el7.x86_64, Kernel_release: 720 patchlevel 14
+ Hostname: localhost, IP address: 127.0.0.1, IP address_v6: 127.0.0.1
+
+ERROR UUID daemon (uuidd) not found.
+Please ask your system administrator to install 
+uuidd according to SAP note 1391070.
+
+**** Trace file opened at 2024-01-25, 15:00:01 CST
+ RFC library: 720, Current working directory: /root/gomodule/go-api-ftp, Program: __debug_bin1894
+ Hardware: AMD/Intel x86_64 with Linux x86_64, Operating_system: Linux 3.10.0-1160.92.1.el7.x86_64, Kernel_release: 720 patchlevel 14
+ Hostname: localhost, IP address: 127.0.0.1, IP address_v6: 127.0.0.1
+
+ERROR UUID daemon (uuidd) not found.
+Please ask your system administrator to install 
+uuidd according to SAP note 1391070.
+
+**** Trace file opened at 2024-01-25, 15:02:18 CST
+ RFC library: 720, Current working directory: /root/gomodule/go-api-ftp, Program: __debug_bin1326
+ Hardware: AMD/Intel x86_64 with Linux x86_64, Operating_system: Linux 3.10.0-1160.92.1.el7.x86_64, Kernel_release: 720 patchlevel 14
+ Hostname: localhost, IP address: 127.0.0.1, IP address_v6: 127.0.0.1
+
+ERROR UUID daemon (uuidd) not found.
+Please ask your system administrator to install 
+uuidd according to SAP note 1391070.
+
+**** Trace file opened at 2024-01-25, 16:35:38 CST
+ RFC library: 720, Current working directory: /root/gomodule/go-api-ftp, Program: __debug_bin3644
+ Hardware: AMD/Intel x86_64 with Linux x86_64, Operating_system: Linux 3.10.0-1160.92.1.el7.x86_64, Kernel_release: 720 patchlevel 14
+ Hostname: localhost, IP address: 127.0.0.1, IP address_v6: 127.0.0.1
+
+ERROR UUID daemon (uuidd) not found.
+Please ask your system administrator to install 
+uuidd according to SAP note 1391070.
+
+**** Trace file opened at 2024-01-25, 16:44:50 CST
+ RFC library: 720, Current working directory: /root/gomodule/go-api-ftp, Program: __debug_bin3026
+ Hardware: AMD/Intel x86_64 with Linux x86_64, Operating_system: Linux 3.10.0-1160.92.1.el7.x86_64, Kernel_release: 720 patchlevel 14
+ Hostname: localhost, IP address: 127.0.0.1, IP address_v6: 127.0.0.1
+
+ERROR UUID daemon (uuidd) not found.
+Please ask your system administrator to install 
+uuidd according to SAP note 1391070.
+
+**** Trace file opened at 2024-01-25, 16:52:25 CST
+ RFC library: 720, Current working directory: /root/gomodule/go-api-ftp, Program: __debug_bin1108
+ Hardware: AMD/Intel x86_64 with Linux x86_64, Operating_system: Linux 3.10.0-1160.92.1.el7.x86_64, Kernel_release: 720 patchlevel 14
+ Hostname: localhost, IP address: 127.0.0.1, IP address_v6: 127.0.0.1
+
+ERROR UUID daemon (uuidd) not found.
+Please ask your system administrator to install 
+uuidd according to SAP note 1391070.
+
+**** Trace file opened at 2024-01-25, 17:36:35 CST
+ RFC library: 720, Current working directory: /root/gomodule/go-api-ftp, Program: __debug_bin3947
+ Hardware: AMD/Intel x86_64 with Linux x86_64, Operating_system: Linux 3.10.0-1160.92.1.el7.x86_64, Kernel_release: 720 patchlevel 14
+ Hostname: localhost, IP address: 127.0.0.1, IP address_v6: 127.0.0.1
+
+ERROR UUID daemon (uuidd) not found.
+Please ask your system administrator to install 
+uuidd according to SAP note 1391070.
+
+**** Trace file opened at 2024-01-25, 17:36:44 CST
+ RFC library: 720, Current working directory: /root/gomodule/go-api-ftp, Program: __debug_bin9857
+ Hardware: AMD/Intel x86_64 with Linux x86_64, Operating_system: Linux 3.10.0-1160.92.1.el7.x86_64, Kernel_release: 720 patchlevel 14
+ Hostname: localhost, IP address: 127.0.0.1, IP address_v6: 127.0.0.1
+
+ERROR UUID daemon (uuidd) not found.
+Please ask your system administrator to install 
+uuidd according to SAP note 1391070.
+
+**** Trace file opened at 2024-01-25, 17:38:08 CST
+ RFC library: 720, Current working directory: /root/gomodule/go-api-ftp, Program: __debug_bin4049
+ Hardware: AMD/Intel x86_64 with Linux x86_64, Operating_system: Linux 3.10.0-1160.92.1.el7.x86_64, Kernel_release: 720 patchlevel 14
+ Hostname: localhost, IP address: 127.0.0.1, IP address_v6: 127.0.0.1
+
+ERROR UUID daemon (uuidd) not found.
+Please ask your system administrator to install 
+uuidd according to SAP note 1391070.
+
+**** Trace file opened at 2024-01-25, 17:43:31 CST
+ RFC library: 720, Current working directory: /root/gomodule/go-api-ftp, Program: __debug_bin2732
+ Hardware: AMD/Intel x86_64 with Linux x86_64, Operating_system: Linux 3.10.0-1160.92.1.el7.x86_64, Kernel_release: 720 patchlevel 14
+ Hostname: localhost, IP address: 127.0.0.1, IP address_v6: 127.0.0.1
+
+ERROR UUID daemon (uuidd) not found.
+Please ask your system administrator to install 
+uuidd according to SAP note 1391070.
+
+**** Trace file opened at 2024-01-25, 17:49:29 CST
+ RFC library: 720, Current working directory: /root/gomodule/go-api-ftp, Program: __debug_bin3997
+ Hardware: AMD/Intel x86_64 with Linux x86_64, Operating_system: Linux 3.10.0-1160.92.1.el7.x86_64, Kernel_release: 720 patchlevel 14
+ Hostname: localhost, IP address: 127.0.0.1, IP address_v6: 127.0.0.1
+
+ERROR UUID daemon (uuidd) not found.
+Please ask your system administrator to install 
+uuidd according to SAP note 1391070.
+
+**** Trace file opened at 2024-01-25, 17:51:24 CST
+ RFC library: 720, Current working directory: /root/gomodule/go-api-ftp, Program: __debug_bin8557
+ Hardware: AMD/Intel x86_64 with Linux x86_64, Operating_system: Linux 3.10.0-1160.92.1.el7.x86_64, Kernel_release: 720 patchlevel 14
+ Hostname: localhost, IP address: 127.0.0.1, IP address_v6: 127.0.0.1
+
+ERROR UUID daemon (uuidd) not found.
+Please ask your system administrator to install 
+uuidd according to SAP note 1391070.
+
+**** Trace file opened at 2024-01-25, 18:51:30 CST
+ RFC library: 720, Current working directory: /root/gomodule/go-api-ftp, Program: __debug_bin3323
+ Hardware: AMD/Intel x86_64 with Linux x86_64, Operating_system: Linux 3.10.0-1160.92.1.el7.x86_64, Kernel_release: 720 patchlevel 14
+ Hostname: localhost, IP address: 127.0.0.1, IP address_v6: 127.0.0.1
+
+ERROR UUID daemon (uuidd) not found.
+Please ask your system administrator to install 
+uuidd according to SAP note 1391070.
+
+**** Trace file opened at 2024-01-25, 18:55:28 CST
+ RFC library: 720, Current working directory: /root/gomodule/go-api-ftp, Program: __debug_bin1916
+ Hardware: AMD/Intel x86_64 with Linux x86_64, Operating_system: Linux 3.10.0-1160.92.1.el7.x86_64, Kernel_release: 720 patchlevel 14
+ Hostname: localhost, IP address: 127.0.0.1, IP address_v6: 127.0.0.1
+
+ERROR UUID daemon (uuidd) not found.
+Please ask your system administrator to install 
+uuidd according to SAP note 1391070.
+
+**** Trace file opened at 2024-01-25, 18:59:49 CST
+ RFC library: 720, Current working directory: /root/gomodule/go-api-ftp, Program: __debug_bin2116
+ Hardware: AMD/Intel x86_64 with Linux x86_64, Operating_system: Linux 3.10.0-1160.92.1.el7.x86_64, Kernel_release: 720 patchlevel 14
+ Hostname: localhost, IP address: 127.0.0.1, IP address_v6: 127.0.0.1
+
+ERROR UUID daemon (uuidd) not found.
+Please ask your system administrator to install 
+uuidd according to SAP note 1391070.
+
+**** Trace file opened at 2024-01-25, 19:03:10 CST
+ RFC library: 720, Current working directory: /root/gomodule/go-api-ftp, Program: __debug_bin3228
+ Hardware: AMD/Intel x86_64 with Linux x86_64, Operating_system: Linux 3.10.0-1160.92.1.el7.x86_64, Kernel_release: 720 patchlevel 14
+ Hostname: localhost, IP address: 127.0.0.1, IP address_v6: 127.0.0.1
+
+ERROR UUID daemon (uuidd) not found.
+Please ask your system administrator to install 
+uuidd according to SAP note 1391070.
+
+**** Trace file opened at 2024-01-25, 19:08:31 CST
+ RFC library: 720, Current working directory: /root/gomodule/go-api-ftp, Program: __debug_bin3488
+ Hardware: AMD/Intel x86_64 with Linux x86_64, Operating_system: Linux 3.10.0-1160.92.1.el7.x86_64, Kernel_release: 720 patchlevel 14
+ Hostname: localhost, IP address: 127.0.0.1, IP address_v6: 127.0.0.1
+
+ERROR UUID daemon (uuidd) not found.
+Please ask your system administrator to install 
+uuidd according to SAP note 1391070.
+
+**** Trace file opened at 2024-01-25, 19:09:47 CST
+ RFC library: 720, Current working directory: /root/gomodule/go-api-ftp, Program: __debug_bin2469
+ Hardware: AMD/Intel x86_64 with Linux x86_64, Operating_system: Linux 3.10.0-1160.92.1.el7.x86_64, Kernel_release: 720 patchlevel 14
+ Hostname: localhost, IP address: 127.0.0.1, IP address_v6: 127.0.0.1
+
+ERROR UUID daemon (uuidd) not found.
+Please ask your system administrator to install 
+uuidd according to SAP note 1391070.
+
+**** Trace file opened at 2024-01-25, 19:18:52 CST
+ RFC library: 720, Current working directory: /root/gomodule/go-api-ftp, Program: __debug_bin1954
+ Hardware: AMD/Intel x86_64 with Linux x86_64, Operating_system: Linux 3.10.0-1160.92.1.el7.x86_64, Kernel_release: 720 patchlevel 14
+ Hostname: localhost, IP address: 127.0.0.1, IP address_v6: 127.0.0.1
+
+ERROR UUID daemon (uuidd) not found.
+Please ask your system administrator to install 
+uuidd according to SAP note 1391070.
+
+**** Trace file opened at 2024-01-25, 19:25:19 CST
+ RFC library: 720, Current working directory: /root/gomodule/go-api-ftp, Program: __debug_bin7038
+ Hardware: AMD/Intel x86_64 with Linux x86_64, Operating_system: Linux 3.10.0-1160.92.1.el7.x86_64, Kernel_release: 720 patchlevel 14
+ Hostname: localhost, IP address: 127.0.0.1, IP address_v6: 127.0.0.1
+
+ERROR UUID daemon (uuidd) not found.
+Please ask your system administrator to install 
+uuidd according to SAP note 1391070.
+
+**** Trace file opened at 2024-01-25, 19:29:56 CST
+ RFC library: 720, Current working directory: /root/gomodule/go-api-ftp, Program: __debug_bin2098
+ Hardware: AMD/Intel x86_64 with Linux x86_64, Operating_system: Linux 3.10.0-1160.92.1.el7.x86_64, Kernel_release: 720 patchlevel 14
+ Hostname: localhost, IP address: 127.0.0.1, IP address_v6: 127.0.0.1
+
+ERROR UUID daemon (uuidd) not found.
+Please ask your system administrator to install 
+uuidd according to SAP note 1391070.
+
+**** Trace file opened at 2024-01-25, 19:31:44 CST
+ RFC library: 720, Current working directory: /root/gomodule/go-api-ftp, Program: __debug_bin2574
+ Hardware: AMD/Intel x86_64 with Linux x86_64, Operating_system: Linux 3.10.0-1160.92.1.el7.x86_64, Kernel_release: 720 patchlevel 14
+ Hostname: localhost, IP address: 127.0.0.1, IP address_v6: 127.0.0.1
+
+ERROR UUID daemon (uuidd) not found.
+Please ask your system administrator to install 
+uuidd according to SAP note 1391070.
+
+**** Trace file opened at 2024-01-25, 19:34:32 CST
+ RFC library: 720, Current working directory: /root/gomodule/go-api-ftp, Program: __debug_bin2555
+ Hardware: AMD/Intel x86_64 with Linux x86_64, Operating_system: Linux 3.10.0-1160.92.1.el7.x86_64, Kernel_release: 720 patchlevel 14
+ Hostname: localhost, IP address: 127.0.0.1, IP address_v6: 127.0.0.1
+
+ERROR UUID daemon (uuidd) not found.
+Please ask your system administrator to install 
+uuidd according to SAP note 1391070.
+
+**** Trace file opened at 2024-01-25, 19:36:08 CST
+ RFC library: 720, Current working directory: /root/gomodule/go-api-ftp, Program: __debug_bin4074
+ Hardware: AMD/Intel x86_64 with Linux x86_64, Operating_system: Linux 3.10.0-1160.92.1.el7.x86_64, Kernel_release: 720 patchlevel 14
+ Hostname: localhost, IP address: 127.0.0.1, IP address_v6: 127.0.0.1
+
+ERROR UUID daemon (uuidd) not found.
+Please ask your system administrator to install 
+uuidd according to SAP note 1391070.
+
+**** Trace file opened at 2024-01-25, 19:41:41 CST
+ RFC library: 720, Current working directory: /root/gomodule/go-api-ftp, Program: __debug_bin4310
+ Hardware: AMD/Intel x86_64 with Linux x86_64, Operating_system: Linux 3.10.0-1160.92.1.el7.x86_64, Kernel_release: 720 patchlevel 14
+ Hostname: localhost, IP address: 127.0.0.1, IP address_v6: 127.0.0.1
+
+ERROR UUID daemon (uuidd) not found.
+Please ask your system administrator to install 
+uuidd according to SAP note 1391070.
+
+**** Trace file opened at 2024-01-25, 19:53:50 CST
+ RFC library: 720, Current working directory: /root/gomodule/go-api-ftp, Program: __debug_bin1226
+ Hardware: AMD/Intel x86_64 with Linux x86_64, Operating_system: Linux 3.10.0-1160.92.1.el7.x86_64, Kernel_release: 720 patchlevel 14
+ Hostname: localhost, IP address: 127.0.0.1, IP address_v6: 127.0.0.1
+
+ERROR UUID daemon (uuidd) not found.
+Please ask your system administrator to install 
+uuidd according to SAP note 1391070.
+
+**** Trace file opened at 2024-01-25, 20:02:26 CST
+ RFC library: 720, Current working directory: /root/gomodule/go-api-ftp, Program: __debug_bin3355
+ Hardware: AMD/Intel x86_64 with Linux x86_64, Operating_system: Linux 3.10.0-1160.92.1.el7.x86_64, Kernel_release: 720 patchlevel 14
+ Hostname: localhost, IP address: 127.0.0.1, IP address_v6: 127.0.0.1
+
+ERROR UUID daemon (uuidd) not found.
+Please ask your system administrator to install 
+uuidd according to SAP note 1391070.
+
+**** Trace file opened at 2024-01-25, 20:11:17 CST
+ RFC library: 720, Current working directory: /root/gomodule/go-api-ftp, Program: __debug_bin2362
+ Hardware: AMD/Intel x86_64 with Linux x86_64, Operating_system: Linux 3.10.0-1160.92.1.el7.x86_64, Kernel_release: 720 patchlevel 14
+ Hostname: localhost, IP address: 127.0.0.1, IP address_v6: 127.0.0.1
+
+ERROR UUID daemon (uuidd) not found.
+Please ask your system administrator to install 
+uuidd according to SAP note 1391070.
+
+**** Trace file opened at 2024-01-25, 20:12:42 CST
+ RFC library: 720, Current working directory: /root/gomodule/go-api-ftp, Program: __debug_bin1797
+ Hardware: AMD/Intel x86_64 with Linux x86_64, Operating_system: Linux 3.10.0-1160.92.1.el7.x86_64, Kernel_release: 720 patchlevel 14
+ Hostname: localhost, IP address: 127.0.0.1, IP address_v6: 127.0.0.1
+
+ERROR UUID daemon (uuidd) not found.
+Please ask your system administrator to install 
+uuidd according to SAP note 1391070.
+
+**** Trace file opened at 2024-01-25, 20:14:31 CST
+ RFC library: 720, Current working directory: /root/gomodule/go-api-ftp, Program: __debug_bin3006
+ Hardware: AMD/Intel x86_64 with Linux x86_64, Operating_system: Linux 3.10.0-1160.92.1.el7.x86_64, Kernel_release: 720 patchlevel 14
+ Hostname: localhost, IP address: 127.0.0.1, IP address_v6: 127.0.0.1
+
+ERROR UUID daemon (uuidd) not found.
+Please ask your system administrator to install 
+uuidd according to SAP note 1391070.
+
+**** Trace file opened at 2024-01-25, 20:17:24 CST
+ RFC library: 720, Current working directory: /root/gomodule/go-api-ftp, Program: __debug_bin2914
+ Hardware: AMD/Intel x86_64 with Linux x86_64, Operating_system: Linux 3.10.0-1160.92.1.el7.x86_64, Kernel_release: 720 patchlevel 14
+ Hostname: localhost, IP address: 127.0.0.1, IP address_v6: 127.0.0.1
+
+ERROR UUID daemon (uuidd) not found.
+Please ask your system administrator to install 
+uuidd according to SAP note 1391070.

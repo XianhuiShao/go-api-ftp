@@ -2,11 +2,15 @@ package main
 
 import (
 	"bytes"
+	"crypto/tls"
 	"encoding/json"
 	"fmt"
+	"io"
 	"log"
 	"net/http"
+	"net/url"
 	"os"
+	"strings"
 	"time"
 
 	"github.com/gin-gonic/gin"
@@ -57,6 +61,38 @@ type Meta struct {
 	} `json:"OUTPUT"`
 }
 
+type authStruct struct {
+	AccessToken string `json:"access_token"`
+	ExpiresIn   int    `json:"expires_in"`
+	Scope       string `json:"scope"`
+	TokenType   string `json:"token_type"`
+}
+
+type fileBeginReqStruct struct {
+	Docid  string `json:"docid"`
+	Length int    `json:"length"`
+	Name   string `json:"name"`
+}
+
+type fileBeginRspStruct struct {
+	Authrequest []string `json:"authrequest"`
+	Docid       string   `json:"docid"`
+	Name        string   `json:"name"`
+	Rev         string   `json:"rev"`
+}
+
+// type filePorcessingRspStruct struct {
+// 	Authrequest []string `json:"authrequest"`
+// 	Docid       string   `json:"docid"`
+// 	Name        string   `json:"name"`
+// 	Rev         string   `json:"rev"`
+// }
+
+type fileEndReqStruct struct {
+	Docid string `json:"docid"`
+	Rev   string `json:"rev"`
+}
+
 func main() {
 
 	router := gin.Default()
@@ -65,6 +101,9 @@ func main() {
 	router.GET("/api/query", query)
 
 	router.POST("/api/sync_data", sync)
+
+	//Upload file into AnyShare
+	router.POST("/api/uploadfile", uploadFile)
 
 	router.Run(":50016")
 }
@@ -212,4 +251,219 @@ func abapSystem() gorfc.ConnectionParameters {
 		"client": "800",
 		"lang":   "ZH",
 	}
+}
+
+func uploadFile(c *gin.Context) {
+
+	// // 从请求body中读取内容
+	// body, err := io.ReadAll(c.Request.Body)
+	// if err != nil {
+	// 	c.String(http.StatusBadRequest, "Bad request")
+	// 	return
+	// }
+	// len := len(body)
+	// str := string(body)
+
+	file, header, err := c.Request.FormFile("file")
+	if err != nil {
+		c.String(http.StatusBadRequest, "文件上传失败")
+	}
+	body, err := io.ReadAll(file)
+
+	//fmt.Println(file, header, body)
+
+	//获取Token
+	token := getToken()
+
+	//开始上传文件
+	fileBeginRsp := fileBegin(token, int(header.Size), header.Filename)
+
+	// 处理上传文件
+	fileProcessing(token, body, fileBeginRsp)
+
+	// //结束上传文件
+	fileEnd(token, fileBeginRsp)
+}
+
+func getToken() string {
+
+	authorization := "Basic MTNjOGQ2NmUtN2Q0OC00ZWY2LWE0Y2EtYzY3NGU2ODExNTgyOjExMTExMQ=="
+	client := &http.Client{
+		Transport: &http.Transport{
+			TLSClientConfig: &tls.Config{InsecureSkipVerify: true},
+		},
+	}
+	urlValues := url.Values{}
+
+	//添加Form Body字段值
+	urlValues.Add("grant_type", "client_credentials")
+	urlValues.Add("scope", "all")
+
+	reqBody := urlValues.Encode()
+	requestPostURL := "https://10.4.132.181:443/oauth2/token"
+	req, err := http.NewRequest(http.MethodPost, requestPostURL, strings.NewReader(reqBody))
+
+	//添加Header
+	req.Header.Add("Content-Type", "application/x-www-form-urlencoded")
+
+	req.Header.Add("Authorization", authorization)
+
+	if err != nil {
+		log.Println(err)
+	}
+	resp, err := client.Do(req)
+	if err != nil {
+		log.Println(err)
+	}
+
+	var auth authStruct
+	err = json.NewDecoder(resp.Body).Decode(&auth)
+	if err != nil {
+		log.Println(err)
+	}
+	token := auth.AccessToken
+
+	defer resp.Body.Close()
+	return token
+}
+
+func fileBegin(token string, len int, filename string) fileBeginRspStruct {
+
+	authorization := "Bearer " + token
+	client := &http.Client{
+		Transport: &http.Transport{
+			TLSClientConfig: &tls.Config{InsecureSkipVerify: true},
+		},
+	}
+
+	var data fileBeginReqStruct
+	data.Docid = "gns://AFC10D84B461408EAD3CEBA6E0EC136F"
+	data.Length = len
+	data.Name = filename
+	jsonData, err := json.Marshal(data)
+	if err != nil {
+		fmt.Println("Error marshalling JSON:", err)
+
+	}
+
+	requestPostURL := "https://10.4.132.181:443/api/efast/v1/file/osbeginupload"
+	req, err := http.NewRequest(http.MethodPost, requestPostURL, bytes.NewBuffer(jsonData))
+	if err != nil {
+		log.Println(err)
+	}
+	//添加Header
+	// req.Header.Add("Content-Type", "application/x-www-form-urlencoded")
+
+	req.Header.Add("Authorization", authorization)
+	// fmt.Println(string(authorization))
+
+	resp, err := client.Do(req)
+	if err != nil {
+		log.Println(err)
+	}
+
+	var fileBeginRsp fileBeginRspStruct
+	err = json.NewDecoder(resp.Body).Decode(&fileBeginRsp)
+	if err != nil {
+		log.Println(err)
+	}
+	return fileBeginRsp
+}
+
+func fileProcessing(token string, body []byte, fileBeginRsp fileBeginRspStruct) {
+
+	client := &http.Client{
+		Transport: &http.Transport{
+			TLSClientConfig: &tls.Config{InsecureSkipVerify: true},
+		},
+	}
+
+	// var data fileBeginReqStruct
+	// data.Docid = "gns://AFC10D84B461408EAD3CEBA6E0EC136F"
+	// // data.Length = len
+	// data.Name = "1.docx"
+	// jsonData, err := json.Marshal(data)
+	// if err != nil {
+	// 	fmt.Println("Error marshalling JSON:", err)
+
+	// }
+	requestPostURL := fileBeginRsp.Authrequest[1]
+
+	// var body1 =
+	req, err := http.NewRequest(http.MethodPut, requestPostURL, bytes.NewReader(body))
+
+	//添加Header
+
+	//Content-Type
+	req.Header.Add("Content-Type", "application/octet-stream")
+
+	//date
+	str := fileBeginRsp.Authrequest[4]
+	fmt.Println(str)
+	lenStr := len(str)
+	slice := str[12:lenStr]
+	//slice := strings.Split(str, ":")
+	req.Header.Add("x-amz-date", slice)
+
+	//Authorization
+	str = fileBeginRsp.Authrequest[2]
+	lenStr = len(str)
+	slice = str[15:lenStr]
+	req.Header.Add("Authorization", slice)
+
+	// fmt.Println(string(authorization))
+	if err != nil {
+		log.Println(err)
+	}
+	fmt.Println(req.Header)
+
+	resp, err := client.Do(req)
+	if err != nil {
+		log.Println(err)
+	}
+
+	respData, _ := io.ReadAll(req.Body)
+	// var fileProcessingRsp filePorcessingRspStruct
+	// err = json.NewDecoder(resp.Body).Decode(&fileProcessingRsp)
+	// if err != nil {
+	// 	log.Println(err)
+	// }
+	fmt.Println("fileProcessing", resp.Status)
+	fmt.Println("res", respData)
+	// return fileBeginRsp
+}
+func fileEnd(token string, fileBeginRsp fileBeginRspStruct) {
+
+	authorization := "Bearer " + token
+	client := &http.Client{
+		Transport: &http.Transport{
+			TLSClientConfig: &tls.Config{InsecureSkipVerify: true},
+		},
+	}
+
+	var data fileEndReqStruct
+	data.Docid = fileBeginRsp.Docid
+	data.Rev = fileBeginRsp.Rev
+	jsonData, err := json.Marshal(data)
+	if err != nil {
+		fmt.Println("Error marshalling JSON:", err)
+
+	}
+
+	requestPostURL := "https://10.4.132.181:443/api/efast/v1/file/osendupload"
+	req, err := http.NewRequest(http.MethodPost, requestPostURL, bytes.NewBuffer(jsonData))
+	if err != nil {
+		log.Println(err)
+	}
+	//添加Header
+	// req.Header.Add("Content-Type", "application/x-www-form-urlencoded")
+
+	req.Header.Add("Authorization", authorization)
+
+	resp, err := client.Do(req)
+	if err != nil {
+		log.Println(err)
+	}
+
+	fmt.Println(resp.Status)
 }
